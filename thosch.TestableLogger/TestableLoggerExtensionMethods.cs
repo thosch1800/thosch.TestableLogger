@@ -8,6 +8,7 @@ namespace Microsoft.Extensions.Logging
   /// <summary>
   /// 
   /// </summary>
+  // ReSharper disable once UnusedType.Global
   public static class TestableLoggerExtensionMethods
   {
     /// <summary>
@@ -23,6 +24,7 @@ namespace Microsoft.Extensions.Logging
     /// </summary>
     /// <param name="c"></param>
     /// <param name="testableLogger">A <see cref="TestableLogger{T}"/> instance.</param>
+    // ReSharper disable once UnusedMember.Global
     public static void ConfigureTestableLogger(this ILoggingBuilder c, TestableLogger testableLogger)
     {
       c.AddTestableLogger(testableLogger);
